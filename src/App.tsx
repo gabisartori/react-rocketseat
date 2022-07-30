@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { Tweet } from './components/Tweet';
+import { Teste } from './components/Teste';
+import './app.css';
 
 function App() {
 // <Component atributos=qualquer_coisa />
@@ -17,11 +19,20 @@ function App() {
 
   return (
     <div>
+      <div id='css'>Essa div foi estilizada com um arquivo css</div>
+      <Teste />
+      <input 
+        type="text"
+        name="bla"
+        id="tweetar"
+        style={{
+          marginLeft: '5px',
+        }}
+        />
+      <button onClick={adicionarTweet}>Adicionar tweet</button>
       {tweets.map((tweet)=>{
         return <Tweet text={tweet}/>;
       })}
-      <input type="text" name="bla" id="tweetar" />
-      <button onClick={adicionarTweet}>Adicionar tweet</button>
     </div>
   );
 }

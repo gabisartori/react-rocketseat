@@ -1,0 +1,14 @@
+body{
+    background-color: darkgray;
+    color: white;
+}
+
+#css{
+    height: 200px;
+    width: 200px;
+    background-color: #0f0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
